@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModFriendly", "ModFriendly\ModFriendly.vcxproj", "{AE7A9ABB-0611-4774-A40A-FDBF6E75E820}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModFriendlyDll", "ModFriendlyDll\ModFriendlyDll.vcxproj", "{6090E839-6631-42E6-8231-397F089996AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7A9ABB-0611-4774-A40A-FDBF6E75E820}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE7A9ABB-0611-4774-A40A-FDBF6E75E820}.Debug|Win32.Build.0 = Debug|Win32
+		{AE7A9ABB-0611-4774-A40A-FDBF6E75E820}.Release|Win32.ActiveCfg = Release|Win32
+		{AE7A9ABB-0611-4774-A40A-FDBF6E75E820}.Release|Win32.Build.0 = Release|Win32
+		{6090E839-6631-42E6-8231-397F089996AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6090E839-6631-42E6-8231-397F089996AC}.Debug|Win32.Build.0 = Debug|Win32
+		{6090E839-6631-42E6-8231-397F089996AC}.Release|Win32.ActiveCfg = Release|Win32
+		{6090E839-6631-42E6-8231-397F089996AC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
