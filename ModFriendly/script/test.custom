@@ -1,0 +1,7 @@
+// Comment syntax
+/* Multiline comment
+   syntax */
+
+// Preprocessor    
+#require required.custom // line-end comment syntax
+

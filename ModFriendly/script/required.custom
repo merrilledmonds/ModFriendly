@@ -1,0 +1,8 @@
+/* A required custom script  /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~  /
+/  Simply prints a line and  /
+/  returns a value.          /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+print("Required.custom prints a line. That's cool.");
+return 4+4-2;

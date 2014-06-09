@@ -15,12 +15,18 @@ public:
 	void run();
 	void stop();
 
-	void createPipe();
+	void createPipe(int tests = 3);
 	void readPipe();
+
+	void startTests();
+	void launchClient();
 
 private:
 	bool pipeRunning;
+	int testCount;
+	int desiredTests;
 	LPTSTR pipename;
+	LPCWSTR clientloc;
 	DWORD dwThreadID;
 	std::vector<HANDLE> pipes;
 	std::map<HANDLE, bool> connected;
