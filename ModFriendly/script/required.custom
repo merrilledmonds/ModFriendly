@@ -5,4 +5,5 @@
 /  ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 print("Required.custom prints a line. That's cool.");
-return 4+4-2;
+print("Required.custom also sets a global variable, global test.");
+global test = 100;

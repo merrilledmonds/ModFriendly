@@ -1,0 +1,13 @@
+/* A peeked custom script    /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~  /
+/  Only provides globals.	 /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+global greatglobal = 100000;
+global greaterglobal = 111000;
+global greatestglobal = 111111;
+
+function notpeeked(x,y,z){
+	return z,y,x
+};

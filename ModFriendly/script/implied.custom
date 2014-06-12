@@ -1,0 +1,11 @@
+/* An implied custom script  /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~  /
+/  Defines a simple function /
+/  that returns sqrt(x).	 /
+/  ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+function sqrt(x){
+	return x^(1/2);
+}
+
+#define root sqrt

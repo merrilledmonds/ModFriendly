@@ -1,7 +1,55 @@
 // Comment syntax
 /* Multiline comment
-   syntax */
+   syntax */   
+   
+// Preprocessors
+#require required.custom //required code is imported
+#require alsorequired.custom // line-end comment syntax
+#imply implied.custom /*implied code is only imported
+						if the current script calls or uses it*/
+#peek peeked.custom /**/ /*peeked code only provides
+						its global variables and nothing else*/
+#require required.custom /**/ /*//*/ /* /* duplicate preprocessors are
+						ignored by the parser*/
+#define definedvariable 1000
+#define redefinedvariable definedvariable
 
-// Preprocessor    
-#require required.custom // line-end comment syntax
+print(a); //prints 1, from alsorequired.custom
+print(test); //prints 100, from required.custom
+/**/ print(test); //prints 100 again, even though the line was preceded by a multiline comment
 
+one = 1; //assignment syntax
+two = 2;
+three = 3;
+    four    =         4; //whitespace is ignored
+		five                    =//whitespace is ignored, as are comments
+					5;
+
+sum = (a + test); //operator syntax
+operations = ((one+two)/three*four)/two^two%three; //order of operations are () then ^ then /*% then +-
+//operations = ((1+2)/3*4)/2^2%3 = (2/3*4)/2^2%3 = (6*4)/2^2%3 = 24/2^2%3 = 24/4%3 = 6%3 = 0
+
+dummy = 1; //again, assignment operator
+dummy += 1; //increment assign operator
+dummy -= 1; //decrement assign operator
+dummy /= 1; //division assign operator
+dummy *= 1; //multiplication assign operator
+dummy %= 1; //modulo assign operator
+dummy ^= 1; //power assign operator
+dummy++; //trailing increment assign operator
+++dummy; //leading increment assign operator
+dummy--; //trailing decrement assign operator
+--dummy; //leading decrement assign operator
+
+dummy = 2;
+print(root(dummy)); //root is defined in implied.custom as sqrt, so implied.custom is marked to be imported
+
+examplestring = "Strings also exists.";
+anotherstring = "And can be " + "concatenated...";
+yetanother = anotherstring + " Again.";
+
+function squareIt_addOne_takeSquareRoot(x){
+	return sqrt(x^2+1);
+};
+
+print(squareIt_addOne_takeSquareRoot(4));
